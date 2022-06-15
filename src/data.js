@@ -1,3 +1,10 @@
+export const headline = [
+  {
+  account: "cindywritescode",
+  bio: "Click on the links below for more information about my coding journey"
+}
+]
+
 export const links = [
   {
     id: 1,
@@ -20,3 +27,4 @@ export const links = [
     url: "https://www.notion.so/cindy-liang/Cindy-Liang-363ef0b911f841cc906acfb6f30122b8",
   }
 ]
+
