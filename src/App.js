@@ -1,11 +1,12 @@
 import './App.css';
+import avatar from './avatar.jpg'
 
 function App() {
   return (
     <div className="container bg-red-50 h-screen mx-auto p-8">
       <div className="grid gap-3">
-        <Avatar url="/cindy.jpg"
-                alt=""/>
+        <Avatar url={avatar}
+                alt="Cindy's avatar image"/>
         <Headline accountName="cindywritecode"
                   bio="Click on the links below for more information about my coding journey "/>
       </div>
