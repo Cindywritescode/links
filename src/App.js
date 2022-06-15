@@ -13,7 +13,7 @@ function App() {
         <ListItem name="YouTube" url="https://www.youtube.com/channel/UCsh7Yv4gvEA8IAlhMK7oOCw"/>
         <ListItem name="LinkedIn" url="https://www.linkedin.com/in/lihsin-liang/" />
         <ListItem name="GitHub" url="https://github.com/Cindywritescode"/>
-        <ListItem name="Portfolio" />
+        <ListItem name="Portfolio" url="https://www.notion.so/cindy-liang/Cindy-Liang-363ef0b911f841cc906acfb6f30122b8" />
       </List>
     </div>
   );
