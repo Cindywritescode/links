@@ -7,7 +7,7 @@ function App() {
       <div className="grid gap-3">
         <Avatar url={avatar}
                 alt="Cindy's avatar image"/>
-        <Headline accountName="cindywritecode"
+        <Headline accountName="cindywritescode"
                   bio="Click on the links below for more information about my coding journey "/>
       </div>
       <List>
@@ -35,7 +35,7 @@ const Headline = ({
 }) => (
   <div className="text-center grid gap-3">
     <h1 className="font-bold text-xl">@{accountName}</h1>
-    <p>{bio}</p>
+    <p className='pb-3'>{bio}</p>
   </div>
 );
 
@@ -50,8 +50,11 @@ const List = ({
 const ListItem = ({
   name, url
 }) => (
-  <li className="space-x-5 p-5  text-center">
-    <a className="block px-3 py-4 rounded-md text-white bg-red-300 hover:bg-rose-500 font-bold text-lg "
+  <li className="space-x-5 p-5  text-center ">
+    <a className="block px-3 py-4 rounded-md text-white
+    bg-gradient-to-r from-red-300 to-red-400
+    hover:from-pink-500 hover:to-blue-300
+    font-bold text-lg drop-shadow-md "
        href={url}>{name}</a>
   </li>
 );
