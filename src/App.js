@@ -2,22 +2,24 @@ import './App.css';
 
 function App() {
   return (
-    <div className="container min-h-screen mx-auto p-8 bg-red-50">
-      <div className="grid gap-2">
-        <Avatar url="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    <div className="container bg-red-50 h-screen mx-auto p-8">
+      <div className="grid gap-3">
+        <Avatar url="/cindy.jpg"
                 alt=""/>
         <Headline accountName="cindywritecode"
                   bio="Click on the links below for more information about my coding journey "/>
       </div>
       <List>
         <ListItem name="YouTube" url="https://www.youtube.com/channel/UCsh7Yv4gvEA8IAlhMK7oOCw"/>
-        <ListItem name="LinkedIn" />
-        <ListItem name="GitHub" />
+        <ListItem name="LinkedIn" url="https://www.linkedin.com/in/lihsin-liang/" />
+        <ListItem name="GitHub" url="https://github.com/Cindywritescode"/>
         <ListItem name="Portfolio" />
       </List>
     </div>
   );
 }
+
+
 
 const Avatar = ({
   url, alt
@@ -30,8 +32,8 @@ const Avatar = ({
 const Headline = ({
   accountName, bio
 }) => (
-  <div className="text-center">
-    <h1 className="font-bold text-2lg">@{accountName}</h1>
+  <div className="text-center grid gap-3">
+    <h1 className="font-bold text-xl">@{accountName}</h1>
     <p>{bio}</p>
   </div>
 );
@@ -39,7 +41,7 @@ const Headline = ({
 const List = ({
   children
 }) => (
-  <ul className="divide-y divide-slate-100 ">
+  <ul className="divide-y divide-slate-100">
     {children}
   </ul>
 );
@@ -47,8 +49,9 @@ const List = ({
 const ListItem = ({
   name, url
 }) => (
-  <li className="space-x-6 p-6">
-    <a className="block px-3 py-2 rounded-md text-white bg-red-300 hover:bg-rose-500" href={url}>{name}</a>
+  <li className="space-x-5 p-5  text-center">
+    <a className="block px-3 py-4 rounded-md text-white bg-red-300 hover:bg-rose-500 font-bold text-lg "
+       href={url}>{name}</a>
   </li>
 );
 
