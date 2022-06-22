@@ -5,7 +5,7 @@ import { Avatar } from './components/Avatar';
 
 function App() {
   return (
-    <div className="container bg-red-50 h-screen mx-auto p-8">
+    <div className="container h-screen mx-auto p-8">
       <div className="grid gap-3">
         <Avatar url={avatar}
                 alt="Cindy's avatar image"/>
@@ -14,7 +14,7 @@ function App() {
       </div>
       <List>
         <ListItem/>
-     </List>
+      </List>
     </div>
   );
 }

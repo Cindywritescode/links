@@ -9,7 +9,7 @@ export const links = [
   {
     id: 1,
     name: 'Instagram',
-    url: 'https://www.youtube.com/channel/UCsh7Yv4gvEA8IAlhMK7oOCw',
+    url: 'https://www.instagram.com/cindywritescode/',
   },
   {
     id: 2,
