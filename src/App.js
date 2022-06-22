@@ -13,7 +13,6 @@ function App() {
                   bio="Click on the links below for more information about my coding journey "/>
       </div>
       <List>
-        {/*<ListItem name="YouTube" url="https://www.youtube.com/channel/UCsh7Yv4gvEA8IAlhMK7oOCw"/>*/}
         <ListItem/>
      </List>
     </div>
